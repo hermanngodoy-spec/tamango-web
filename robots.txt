@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tamangospa.cl/sitemap.xml

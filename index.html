@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAMANGO — Insumos industriales y de aseo en Atacama · Grupo Chavilca</title>
+<meta name="description" content="TAMANGO: insumos de aseo e higiene, EPP y consumibles de faena con stock local en la Provincia de Chañaral, Atacama. Los mismos insumos que el Grupo Chavilca usa en sus propias operaciones, disponibles para su empresa.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tamangospa.cl/">
+<meta property="og:title" content="TAMANGO — Insumos industriales y de aseo en Atacama">
+<meta property="og:description" content="El andar y la resistencia: los insumos que el Grupo Chavilca usa todos los días, disponibles para su empresa. Stock local en la Provincia de Chañaral.">
+<meta property="og:locale" content="es_CL">
+<meta name="theme-color" content="#B9572A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cuero:#B9572A; --cuero-deep:#8F3F1D; --cuero-bright:#D26A38;
+    --petroleo:#0F4C5C; --petroleo-deep:#0A3A47; --teal:#159AAB;
+    --oro:#B0873C; --crema:#F7F3EC; --crema-2:#EFE9DD;
+    --ink:#2E2418; --muted:#6E655B; --radius:16px; --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  [id]{scroll-margin-top:80px}
+  body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--crema);line-height:1.65}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif}
+  svg{max-width:100%}
+
+  header{background:var(--cuero-deep);position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(80,32,10,.35)}
+  .nav{display:flex;align-items:center;gap:12px;padding:12px 0;color:var(--crema)}
+  .nav b{font-family:'Fraunces',serif;font-size:19px;letter-spacing:2px;font-weight:600}
+  .nav .links{margin-left:auto;display:flex;gap:22px}
+  .nav .links a{color:var(--crema);opacity:.85;text-decoration:none;font-size:14px;font-weight:600}
+  .nav .links a:hover{opacity:1;color:var(--oro)}
+  @media(max-width:680px){.nav .links{display:none}}
+
+  .hero{background:linear-gradient(180deg,var(--cuero) 0%,var(--cuero-deep) 100%);color:var(--crema);text-align:center;padding:64px 22px 58px}
+  .hero .logo{width:195px;margin:0 auto;filter:drop-shadow(0 8px 20px rgba(0,0,0,.3))}
+  .hero .rubro{color:#FFD9C2;font-weight:800;letter-spacing:3px;font-size:12.5px;text-transform:uppercase;margin-top:14px}
+  .hero h1{font-size:clamp(38px,7vw,52px);margin:6px 0 2px;letter-spacing:3px;font-weight:600}
+  .hero p{max-width:620px;margin:16px auto 0;font-size:clamp(16px,2.4vw,18.5px);color:#FFE8D9}
+  .hero p b{color:#fff}
+  .chvbadge{display:inline-flex;align-items:center;gap:9px;border-radius:99px;padding:8px 18px;font-weight:800;font-size:12.5px;letter-spacing:1.5px;background:rgba(0,0,0,.28);color:var(--crema);margin-top:24px}
+  .cta{display:inline-block;margin-top:28px;background:var(--oro);color:#20180B;font-weight:800;padding:14px 32px;border-radius:99px;text-decoration:none;font-size:15px;transition:transform .15s}
+  .cta:hover{transform:translateY(-2px)}
+
+  section{padding:58px 0}
+  .eyebrow{color:var(--oro);font-weight:800;letter-spacing:3px;font-size:12px;text-transform:uppercase;display:block;margin-bottom:8px}
+  h2{font-size:clamp(25px,4vw,30px);margin:0 0 12px;color:var(--cuero-deep);font-weight:600}
+  .lead{font-size:16px;max-width:68ch}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px;margin-top:28px}
+  .card{background:#fff;border:1px solid #E8DACB;border-radius:var(--radius);padding:24px;font-size:14px;color:var(--muted)}
+  .card .em{font-size:28px}
+  .card b{display:block;font-family:'Fraunces',serif;font-size:17px;margin:10px 0 5px;font-weight:600;color:var(--cuero-deep)}
+
+  .grupo{background:var(--petroleo);color:var(--crema)}
+  .grupo h2{color:var(--crema)}
+  .gtop{display:flex;gap:28px;align-items:center;flex-wrap:wrap;background:rgba(0,0,0,.28);border:1.5px solid var(--oro);border-radius:var(--radius);padding:26px 30px;margin-top:20px}
+  .gtop .txt{flex:1;min-width:260px;font-size:14.5px;color:#E4DCC8}
+  .gtop .txt b{display:block;font-family:'Fraunces',serif;font-size:22px;color:var(--crema);letter-spacing:2px;margin-bottom:8px;font-weight:600}
+  .gtop .txt .con{color:var(--oro);font-weight:800}
+  .gtop a{color:var(--oro);text-decoration:none;font-weight:800}
+  .gtop a:hover{text-decoration:underline}
+  .hermanas-t{font-weight:800;letter-spacing:2.5px;font-size:11.5px;color:#B9C6CD;text-transform:uppercase;margin:26px 0 12px}
+  .gflex{display:flex;gap:18px;flex-wrap:wrap}
+  .gcard{flex:1;min-width:270px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:22px;font-size:13.5px;display:flex;gap:18px;align-items:center;color:#D8D2C4}
+  .gcard .glogo{flex-shrink:0;display:flex;align-items:center}
+  .gcard b{display:block;font-family:'Fraunces',serif;font-size:17.5px;margin-bottom:3px;letter-spacing:1px;color:var(--crema);font-weight:600}
+  .gcard a{color:var(--oro);text-decoration:none;font-weight:700}
+  .gcard a:hover{text-decoration:underline}
+
+  .contacto{text-align:center;background:var(--crema-2)}
+  .mail{display:inline-block;margin-top:12px;font-weight:800;font-size:clamp(17px,3vw,21px);color:var(--cuero);text-decoration:none}
+  .mail:hover{text-decoration:underline}
+  .greca{display:block;margin:28px auto 0;width:150px;height:14px}
+  footer{background:var(--cuero-deep);color:#F3D9C8;text-align:center;font-size:12.5px;padding:22px}
+  footer .oro{color:var(--oro);font-weight:800}
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <svg width="30" viewBox="0 40 240 170" aria-hidden="true"><ellipse cx="120" cy="124" rx="44" ry="80" fill="#F7F3EC"/><line x1="120" y1="74" x2="94" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><line x1="120" y1="74" x2="146" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><line x1="96" y1="134" x2="144" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><polygon points="120,62 131,74 120,86 109,74" fill="#B9572A"/></svg>
+  <b>TAMANGO</b>
+  <nav class="links"><a href="#catalogo">Catálogo</a><a href="#grupo">El grupo</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+
+<div class="hero">
+  <svg class="logo" viewBox="0 40 240 170" role="img" aria-label="Isotipo TAMANGO"><ellipse cx="120" cy="124" rx="44" ry="80" fill="#F7F3EC"/><ellipse cx="120" cy="124" rx="36" ry="72" fill="none" stroke="#B9572A" stroke-width="2.5" stroke-dasharray="2 5" stroke-linecap="round"/><line x1="120" y1="74" x2="94" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><line x1="120" y1="74" x2="146" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><line x1="96" y1="134" x2="144" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><polygon points="120,62 131,74 120,86 109,74" fill="#B9572A"/><polygon points="120,122 131,134 120,146 109,134" fill="#F7F3EC"/></svg>
+  <div class="rubro">Insumos industriales y de aseo · Atacama</div>
+  <h1>TAMANGO</h1>
+  <p>El andar y la resistencia: los insumos que el <b>Grupo Chavilca</b> usa todos los días en sus propias operaciones — ahora disponibles para su empresa.</p>
+  <br><span class="chvbadge">
+    <svg width="18" viewBox="30 30 180 180" aria-hidden="true"><polygon points="120,40 200,120 40,120" fill="#0F4C5C"/><polygon points="40,120 93.3,120 120,200" fill="#159AAB"/><polygon points="93.3,120 146.7,120 120,200" fill="#B9572A"/><polygon points="146.7,120 200,120 120,200" fill="#95A0AA"/><polygon points="120,40 200,120 120,200 40,120" fill="none" stroke="#D9CFB8" stroke-width="8"/></svg>
+    EMPRESA DEL GRUPO CHAVILCA</span>
+  <br><a class="cta" href="#contacto">Pida su cotización</a>
+</div>
+
+<section id="catalogo"><div class="wrap">
+  <span class="eyebrow">Catálogo</span>
+  <h2>Probado en nuestra propia operación</h2>
+  <p class="lead">No vendemos de catálogo ajeno: son los mismos insumos con que AMARU asea campamentos y procesa miles de kilos de ropa a la semana. Si nos funcionan en el desierto, funcionan donde sea.</p>
+  <div class="cards">
+    <div class="card"><span class="em">🧴</span><b>Aseo e higiene</b>Detergentes, desinfectantes, papel higiénico, toalla nova, jabón y dispensadores.</div>
+    <div class="card"><span class="em">🧤</span><b>EPP y seguridad</b>Guantes de nitrilo, respiradores, antiparras y delantales — los mismos que exige la norma.</div>
+    <div class="card"><span class="em">🗑️</span><b>Consumibles de faena</b>Bolsas de basura industriales, bolsas de ropa, film, etiquetas y embalaje.</div>
+    <div class="card"><span class="em">🚚</span><b>Reposición programada</b>Stock local en la Provincia de Chañaral y entrega junto a los servicios de AMARU: un solo despacho.</div>
+  </div>
+</div></section>
+
+<section id="grupo" class="grupo"><div class="wrap">
+  <span class="eyebrow">El respaldo</span>
+  <h2>Parte del Grupo Chavilca</h2>
+  <div class="gtop">
+    <svg width="104" viewBox="30 30 180 180" aria-hidden="true"><polygon points="120,40 200,120 40,120" fill="#0F4C5C"/><polygon points="40,120 93.3,120 120,200" fill="#159AAB"/><polygon points="93.3,120 146.7,120 120,200" fill="#B9572A"/><polygon points="146.7,120 200,120 120,200" fill="#95A0AA"/><polygon points="120,75 135,90 120,105 105,90" fill="none" stroke="#F7F3EC" stroke-width="3.2"/><polygon points="120,84 126,90 120,96 114,90" fill="#F7F3EC"/><polyline points="86,128 78,138 84,138 76,148" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="120" cy="139" rx="7" ry="12" fill="#fff"/><line x1="120" y1="129" x2="115" y2="149" stroke="#B9572A" stroke-width="2.2" stroke-linecap="round"/><line x1="120" y1="129" x2="125" y2="149" stroke="#B9572A" stroke-width="2.2" stroke-linecap="round"/><polygon points="151,135 165,135 163,148 153,148" fill="#fff"/><polygon points="120,40 200,120 120,200 40,120" fill="none" stroke="#D9CFB8" stroke-width="3.5"/><line x1="40" y1="120" x2="200" y2="120" stroke="#F7F3EC" stroke-width="3"/><line x1="93.3" y1="120" x2="120" y2="200" stroke="#F7F3EC" stroke-width="2.5"/><line x1="146.7" y1="120" x2="120" y2="200" stroke="#F7F3EC" stroke-width="2.5"/></svg>
+    <div class="txt"><b>GRUPO CHAVILCA</b><span class="con">TAMANGO es el andar del grupo:</span> el cuero del rombo — el brazo de suministros de un holding local con raíz diaguita que ya opera lavandería industrial, aseo y mantención en Atacama, con tecnología propia y cumplimiento auditable. Comprar aquí es comprarle a un grupo que responde.<br><a href="https://chavilca.cl">Conozca el grupo en chavilca.cl →</a></div>
+  </div>
+  <div class="hermanas-t">Las hermanas del grupo</div>
+  <div class="gflex">
+    <div class="gcard"><span class="glogo"><svg width="100" viewBox="40 285 780 290" aria-hidden="true"><path d="M246,299 L268,303 L281,311 L385,435 L499,311 L512,303 L522,300 L534,299 L549,302 L562,309 L616,351 L800,403 L731,480 L720,491 L687,481 L669,492 L660,494 L641,493 L621,483 L537,418 L416,550 L403,558 L380,562 L366,559 L353,552 L262,445 L244,484 L238,492 L225,502 L211,507 L191,507 L179,503 L170,497 L61,478 L155,435 L204,325 L221,307 L234,301 L245,300 Z" fill="#F6F1E6"/><path d="M268,337 L308,377 L268,416 L229,377 L267,338 Z" fill="#2CC4D6"/><path d="M511,337 L551,377 L511,416 L472,377 L510,338 Z" fill="#D26A38"/><path d="M683,386 L694,387 L702,394 L704,398 L704,409 L702,413 L696,419 L690,421 L680,420 L672,413 L670,409 L670,398 L672,394 L678,388 L682,387 Z" fill="#153449"/><path d="M383,445 L422,485 L383,524 L344,485 L382,446 Z" fill="#153449"/></svg></span><div><b>AMARU</b>Lavandería industrial + aseo y mantención, operando.<br><a href="https://amaruspa.cl">amaruspa.cl →</a></div></div>
+    <div class="gcard"><span class="glogo"><svg width="36" viewBox="60 10 120 210" aria-hidden="true"><path d="M108,42 C102,34 114,30 108,22" fill="none" stroke="#F7F3EC" stroke-width="4" stroke-linecap="round"/><path d="M120,40 C114,32 126,28 120,20" fill="none" stroke="#F7F3EC" stroke-width="4" stroke-linecap="round"/><path d="M132,42 C138,34 126,30 132,22" fill="none" stroke="#F7F3EC" stroke-width="4" stroke-linecap="round"/><polygon points="72,52 168,52 160,68 80,68" fill="#F7F3EC"/><polygon points="80,68 160,68 150,198 90,198" fill="#F7F3EC"/><polygon points="86,198 154,198 162,214 78,214" fill="#F7F3EC"/><polygon points="90,84 106,84 98,100" fill="#95A0AA"/><polygon points="106,84 122,84 114,100" fill="#95A0AA"/><polygon points="122,84 138,84 130,100" fill="#95A0AA"/><polygon points="138,84 154,84 146,100" fill="#95A0AA"/><polyline points="88,176 99,166 110,176 121,166 132,176 143,166 152,174" fill="none" stroke="#95A0AA" stroke-width="3.5"/><polygon points="120,112 140,134 120,156 100,134" fill="#0F4C5C"/><polygon points="120,120 130,134 120,148 110,134" fill="#159AAB"/></svg></span><div><b>COLQUE</b>La mesa del grupo: café, coffee-break y eventos.<br><a href="https://colquespa.cl">colquespa.cl →</a></div></div>
+  </div>
+</div></section>
+
+<section id="contacto" class="contacto"><div class="wrap">
+  <span class="eyebrow">Contacto</span>
+  <h2>Conversemos</h2>
+  <p class="lead" style="margin:0 auto">Cotizaciones y catálogo:</p>
+  <a class="mail" href="mailto:contacto@tamangospa.cl">contacto@tamangospa.cl</a>
+  <svg class="greca" viewBox="0 0 120 12" aria-hidden="true"><polyline points="0,10 10,2 20,10 30,2 40,10 50,2 60,10 70,2 80,10 90,2 100,10 110,2 120,10" fill="none" stroke="#B9572A" stroke-width="2.5"/></svg>
+</div></section>
+
+<footer>© 2026 TAMANGO SpA · Empresa del <span class="oro">GRUPO CHAVILCA</span> · Atacama, Chile</footer>
+</body>
+</html>
