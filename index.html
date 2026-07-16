@@ -57,6 +57,14 @@
   .card .em{font-size:28px}
   .card b{display:block;font-family:'Fraunces',serif;font-size:17px;margin:10px 0 5px;font-weight:600;color:var(--cuero-deep)}
 
+  .quote{border-left:4px solid var(--oro);background:var(--crema-2);padding:14px 20px;font-style:italic;color:var(--muted);margin:22px 0;max-width:60ch;font-family:'Fraunces',serif;font-size:16px}
+  .simbolos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+  @media(max-width:860px){.simbolos{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.simbolos{grid-template-columns:1fr}}
+  .simb{background:#fff;border:1px solid #E8DACB;border-radius:var(--radius);padding:20px 14px 16px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.5}
+  .simb .ic{height:72px;display:flex;align-items:center;justify-content:center}
+  .simb b{display:block;font-family:'Fraunces',serif;font-size:15.5px;margin:10px 0 4px;font-weight:600;color:var(--cuero-deep)}
+
   .grupo{background:var(--petroleo);color:var(--crema)}
   .grupo h2{color:var(--crema)}
   .gtop{display:flex;gap:28px;align-items:center;flex-wrap:wrap;background:rgba(0,0,0,.28);border:1.5px solid var(--oro);border-radius:var(--radius);padding:26px 30px;margin-top:20px}
@@ -86,7 +94,7 @@
 <header><div class="wrap nav">
   <svg width="30" viewBox="0 40 240 170" aria-hidden="true"><ellipse cx="120" cy="124" rx="44" ry="80" fill="#F7F3EC"/><line x1="120" y1="74" x2="94" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><line x1="120" y1="74" x2="146" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><line x1="96" y1="134" x2="144" y2="134" stroke="#B9572A" stroke-width="9" stroke-linecap="round"/><polygon points="120,62 131,74 120,86 109,74" fill="#B9572A"/></svg>
   <b>TAMANGO</b>
-  <nav class="links"><a href="#catalogo">Catálogo</a><a href="#grupo">El grupo</a><a href="#contacto">Contacto</a></nav>
+  <nav class="links"><a href="#raiz">La raíz</a><a href="#catalogo">Catálogo</a><a href="#grupo">El grupo</a><a href="#contacto">Contacto</a></nav>
 </div></header>
 
 <div class="hero">
@@ -99,6 +107,20 @@
     EMPRESA DEL GRUPO CHAVILCA</span>
   <br><a class="cta" href="#contacto">Pida su cotización</a>
 </div>
+
+<section id="raiz" style="background:var(--crema-2)"><div class="wrap">
+  <span class="eyebrow">Nuestra raíz</span>
+  <h2>El tamango: el andar y la resistencia</h2>
+  <p class="lead">El <b>tamango</b> es el calzado rústico de cuero del trabajador andino: cosido a mano, curtido por el sol y la tierra, hecho para aguantar jornadas completas en terreno duro. No es elegante — es <b>confiable</b>, y por eso acompaña al que trabaja desde hace generaciones.</p>
+  <p class="lead" style="margin-top:12px">Lo elegimos como nombre y símbolo porque es exactamente lo que prometemos: <b>insumos que resisten el uso real</b> — probados en nuestras propias operaciones en el desierto — y que acompañan el paso firme de quien trabaja.</p>
+  <div class="quote">Lo que se compra para trabajar tiene que aguantar como un tamango.</div>
+  <div class="simbolos">
+    <div class="simb"><div class="ic"><svg width="46" viewBox="60 30 120 190" aria-hidden="true"><ellipse cx="120" cy="124" rx="44" ry="80" fill="#B9572A"/></svg></div><b>El cuero</b>La pieza noble y curtida: el material que protege y dura.</div>
+    <div class="simb"><div class="ic"><svg width="46" viewBox="60 30 120 190" aria-hidden="true"><ellipse cx="120" cy="124" rx="36" ry="72" fill="none" stroke="#B9572A" stroke-width="4" stroke-dasharray="3 8" stroke-linecap="round"/></svg></div><b>La costura</b>El trabajo hecho a mano, puntada a puntada: el detalle bien hecho.</div>
+    <div class="simb"><div class="ic"><svg width="52" viewBox="80 55 80 90" aria-hidden="true"><line x1="120" y1="74" x2="94" y2="134" stroke="#B9572A" stroke-width="10" stroke-linecap="round"/><line x1="120" y1="74" x2="146" y2="134" stroke="#B9572A" stroke-width="10" stroke-linecap="round"/><line x1="96" y1="134" x2="144" y2="134" stroke="#B9572A" stroke-width="10" stroke-linecap="round"/></svg></div><b>La marca del paso</b>La pisada que avanza: el andar del grupo por Atacama.</div>
+    <div class="simb"><div class="ic"><svg width="40" viewBox="105 50 30 44" aria-hidden="true"><polygon points="120,62 131,74 120,86 109,74" fill="#B9572A"/></svg></div><b>El rombo diaguita</b>La raíz compartida: la marca del Grupo Chavilca en el cuero.</div>
+  </div>
+</div></section>
 
 <section id="catalogo"><div class="wrap">
   <span class="eyebrow">Catálogo</span>
